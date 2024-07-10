@@ -1,0 +1,213 @@
+*{
+  font-family: verdana, sans-serif;
+  padding: 0; margin: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.container{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 30%;
+}
+
+img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.registre{
+  position: absolute;
+  z-index: 1;
+}
+
+.registre a{
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 70%;
+    padding-bottom: 30px;
+}
+
+.right form{
+  margin-top: 30px;
+  padding: 10px;
+  width: 850px;
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, .1); */
+}
+
+.right form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.right form .row .col{
+  flex: 1 1 250px; 
+}
+
+.right form .row .col .inputBox{
+  margin: 10px 0;
+}
+
+.right form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.right form .row .col .inputBox input{
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.right form .row .col .inputBox input:focus{
+  border: 1px solid #000;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+}
+
+form .pay {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  gap: 20px;
+  width: 100%; 
+  margin-bottom: 10px;
+}
+
+form .div-pay, .prefer{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+form .pay .pydt, .span-prefer{
+  position: absolute;
+  right: 0;
+}
+
+form .pydt a, .span-prefer a{
+  font-size: 8px;
+  color: #000;
+  opacity: 0.7;
+}
+
+form .pay .in{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px; 
+  font-weight: bold;
+  margin-top: 3px;
+}
+
+form .pay .in p{
+  text-wrap: nowrap;
+}
+
+form .pay .in span {
+  margin-top: 5px;
+}
+
+form .pay .in input{
+  accent-color: #15b179;
+}
+
+.don{
+  margin-top: 15px;
+  position: relative; 
+}
+
+form .don input{
+  width: 100%;
+}
+
+form .don .cash{
+  position: absolute;
+  z-index: 1;
+  width: 10%;
+  padding: 5px 3px;
+  margin-top: 13px;
+  margin-left: 45%;
+  background-color: #15b179;
+  color: #fff;
+  text-align: center;
+}
+
+.range label{
+  font-weight: bold;
+  font-size: 11px;
+}
+
+form .btn{
+  display: flex;
+  justify-content: end;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+form .btn1{
+width: 100px;
+height: 50px;
+background-color: rgba(45, 185, 135, 255);
+color: #fff;
+border-radius: 5px;
+text-align: center;
+cursor: pointer;
+}
+
+form .btn2{
+  width: 100px;
+  height: 50px;
+  background-color: #fff;
+  color: #bcbcbc;
+  border: 1px solid #2db987;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+form .btn1:hover{
+  background-color: #ccc;
+}
+
+form .btn2:hover:hover{
+  background-color: #2db987;
+}
+
+@media (max-width: 750px) {
+  .left{
+    display: none; 
+  }
+  .container{
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+  }
+}

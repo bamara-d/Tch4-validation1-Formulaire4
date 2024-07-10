@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form4.css" />
+    <title>Tâche de validation</title>
+  </head>
+
+  <body>
+    
+    <div class="container">
+      <div class="left">
+        <div class="registre"><a href="#">REGISTRE NOW</a></div>
+        <img src="resto.jpg" alt="Une photo d'un resto au bord de la mer" />
+      </div>
+      <div class="right">
+        <form method="post" action="form4.php">
+          <div class="row">
+            <div class="col">
+              <div class="inputBox">
+                <span>FIRST NAME</span>
+                <input type="text" />
+              </div>
+              <div class="inputBox">
+                <span>LAST NAME</span>
+                <input type="text" />
+              </div>
+              <div class="inputBox">
+                <span>COMPANY</span>
+                <input type="text" />
+              </div>
+              <div class="inputBox">
+                <span>EMAIL</span>
+                <input type="email" />
+              </div>
+              <div class="inputBox">
+                <span>PHONE NUMBER</span>
+                <input type="tel" />
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="inputBox">
+                <div class="prefer">
+                  <span>MEAL PREFERENCE</span>
+                  <span class="span-prefer"><a href="">Lunch detail</a></span>
+                </div>
+                <input type="text" />
+              </div>
+              <div class="inputBox">
+                <div class="div-pay">
+                  <span>PAIEMENT METHOD</span>
+                  <span class="pydt"><a href="#">Payement detail</a></span>
+                </div>
+                <div class="pay">
+                  <div class="in">
+                    <input type="radio" name="cash" id="cash" value="cash" />
+                    <span>Cash</span>
+                  </div>
+                  <div class="in">
+                    <input
+                      type="radio"
+                      name="cheque"
+                      id="cheque"
+                      value="cheque"
+                    />
+                    <span>Cheque</span>
+                  </div>
+                  <div class="in">
+                    <input type="radio" name="" id="draf" />
+                    <p>Demand Draf</p>
+                  </div>
+                </div>
+              </div>
+              <div class="inputBox">
+                <span>DD / CHEQUE NO.</span>
+                <input type="text" />
+              </div>
+              <div class="inputBox">
+                <span>DRAWN ON ( BANK NAME )</span>
+                <input type="text" />
+              </div>
+              <div class="inputBox">
+                <span>PAYABLE AT</span>
+                <input type="text" />
+              </div>
+            </div>
+          </div>
+          <div class="don">
+            <span class="cash"> <$500> </span>
+            <div class="range">
+              <label for="range">. DONNATE US</label>
+              <input type="range" name="range" style="accent-color: #15b179" />
+            </div>
+          </div>
+          <div class="btn">
+            <input class="btn1" type="submit" value="SUBMIT" />
+            <input class="btn2" type="reset" value="RESET" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </body>
+
+</html>
